@@ -10,4 +10,10 @@
 
 @interface RHFloatImageViewControl : NSObject
 
+@property (strong, nonatomic, readonly) UIImage *image;
+@property (strong, nonatomic, readonly) UIPanGestureRecognizer *panGesture;
+
+- (id)initWithImage:(UIImage *)image;
+- (void)floatImageViewFromRect:(CGRect)startRect;
+
 @end

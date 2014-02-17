@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1FF18318B241C900D7D716 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1FF18218B241C900D7D716 /* QuartzCore.framework */; };
+		BA1FF18618B241D700D7D716 /* UIView+Genie.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1FF18518B241D700D7D716 /* UIView+Genie.m */; };
 		BAC87EA218B2354400EE14C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC87EA118B2354400EE14C0 /* Foundation.framework */; };
 		BAC87EA418B2354400EE14C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC87EA318B2354400EE14C0 /* CoreGraphics.framework */; };
 		BAC87EA618B2354400EE14C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC87EA518B2354400EE14C0 /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA1FF18218B241C900D7D716 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BA1FF18418B241D700D7D716 /* UIView+Genie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Genie.h"; sourceTree = "<group>"; };
+		BA1FF18518B241D700D7D716 /* UIView+Genie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Genie.m"; sourceTree = "<group>"; };
 		BAC87E9E18B2354400EE14C0 /* RHFloatImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHFloatImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC87EA118B2354400EE14C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BAC87EA318B2354400EE14C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1FF18318B241C900D7D716 /* QuartzCore.framework in Frameworks */,
 				BAC87EA418B2354400EE14C0 /* CoreGraphics.framework in Frameworks */,
 				BAC87EA618B2354400EE14C0 /* UIKit.framework in Frameworks */,
 				BAC87EA218B2354400EE14C0 /* Foundation.framework in Frameworks */,
@@ -102,6 +108,7 @@
 		BAC87EA018B2354400EE14C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA1FF18218B241C900D7D716 /* QuartzCore.framework */,
 				BAC87EA118B2354400EE14C0 /* Foundation.framework */,
 				BAC87EA318B2354400EE14C0 /* CoreGraphics.framework */,
 				BAC87EA518B2354400EE14C0 /* UIKit.framework */,
@@ -156,6 +163,8 @@
 		BAC87ED618B2359A00EE14C0 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				BA1FF18418B241D700D7D716 /* UIView+Genie.h */,
+				BA1FF18518B241D700D7D716 /* UIView+Genie.m */,
 				BAC87ED718B235C400EE14C0 /* RHFloatImageViewControl.h */,
 				BAC87ED818B235C400EE14C0 /* RHFloatImageViewControl.m */,
 			);
@@ -261,6 +270,7 @@
 				BAC87EB818B2354400EE14C0 /* ViewController.m in Sources */,
 				BAC87EB218B2354400EE14C0 /* AppDelegate.m in Sources */,
 				BAC87EAE18B2354400EE14C0 /* main.m in Sources */,
+				BA1FF18618B241D700D7D716 /* UIView+Genie.m in Sources */,
 				BAC87ED918B235C400EE14C0 /* RHFloatImageViewControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +468,7 @@
 				BAC87ED218B2354400EE14C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAC87ED318B2354400EE14C0 /* Build configuration list for PBXNativeTarget "RHFloatImageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +477,7 @@
 				BAC87ED518B2354400EE14C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,10 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "RHFloatImageViewControl.h"
 
 @interface ViewController ()
 
 @property (strong, nonatomic) UIBarButtonItem *rightButton;
+@property (strong, nonatomic) RHFloatImageViewControl *floatImageViewControl;
 
 @end
 
@@ -42,7 +44,15 @@
 }
 
 - (void)rightButtonAction {
-  NSLog(@"Show");
+  [self.floatImageViewControl floatImageViewFromRect:CGRectMake(260, 20, 44, 44)];
+}
+
+- (RHFloatImageViewControl *)floatImageViewControl {
+  if (!_floatImageViewControl) {
+    _floatImageViewControl = [[RHFloatImageViewControl alloc] initWithImage:[UIImage imageNamed:@"dummy"]];
+  }
+  
+  return _floatImageViewControl;
 }
 
 @end
